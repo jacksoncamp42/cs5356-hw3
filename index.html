@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Homepage</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta property="og:title" content="My Personal Homepage">
+    <meta property="og:description" content="A personal homepage created for CS5356">
+    <meta property="og:image" content="https://jacksoncamp42.github.io/cs5356-hw3/images/profile.jpg">
+    <meta property="og:url" content="https://jacksoncamp42.github.io/cs5356-hw3/">
+    <meta name="twitter:card" content="summary_large_image">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#interests">Interests</a></li>
+                <li><a href="#api-section">Weather</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about">
+            <h1>Hello, I'm Jackson</h1>
+            <figure>
+                <img src="images/profile.jpg" alt="My profile picture" class="profile-image">
+                <figcaption>That's me!</figcaption>
+            </figure>
+            <article>
+                <h2>About Me</h2>
+                <p>I'm a student at Cornell Tech studying CS. I'm passionate about technology, design, and creating meaningful digital experiences.</p>
+                <p>This website was created as part of CS5356 to demonstrate HTML, CSS, and JavaScript skills.</p>
+            </article>
+        </section>
+
+        <section id="interests">
+            <h2>My Interests</h2>
+            <div class="interests-grid">
+                <div class="interest-card">
+                    <h3>Rugby</h3>
+                    <p>I enjoy playing rugby.</p>
+                </div>
+                <div class="interest-card">
+                    <h3>Machine Learning</h3>
+                    <p>Exploring AI and its applications in solving real-world problems.</p>
+                </div>
+                <div class="interest-card">
+                    <h3>Photography</h3>
+                    <p>Capturing moments and telling stories through images.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="new-element">
+            <h2>Exploring New HTML Elements</h2>
+            <details>
+                <summary>Click to learn about the &lt;details&gt; element!</summary>
+                <p>The &lt;details&gt; element creates a disclosure widget in which information is visible only when the widget is toggled into an "open" state.</p>
+                <p>I found this element interesting because it provides native browser support for collapsible content without requiring JavaScript. It's perfect for FAQs, accordions, and other expandable content sections.</p>
+                <p>The &lt;summary&gt; element specifies the visible heading for the details.</p>
+            </details>
+        </section>
+
+        <section id="api-section">
+            <h2>Random Space Facts</h2>
+            <div id="space-container">
+                <p>Loading space data...</p>
+            </div>
+            <button id="get-new-fact" class="fact-button">Get New Fact</button>
+        </section>
+
+        <section id="css-property">
+            <h2>New CSS Property: backdrop-filter</h2>
+            <div class="backdrop-demo">
+                <div class="blur-box">
+                    <p>This box uses the backdrop-filter property to create a frosted glass effect.</p>
+                    <p>I learned that backdrop-filter applies filters to the area behind an element, which is different from the filter property that affects the element itself. This creates interesting visual effects like this blur without affecting the content inside the element.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 [Jackson]</p>
+        <p>Created for CS5356</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+    
+    <script data-goatcounter="https://jacksoncamp42.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>
